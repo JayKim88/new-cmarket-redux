@@ -1,21 +1,22 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 function Nav() {
-
-  const state = useSelector(state => state.itemReducer);
+  const state = useSelector((state) => state.itemReducer);
 
   return (
     <div id="nav-body">
       <span id="title">
-        <img id="logo" src="../logo.png" alt="logo" />
-        <span id="name">CMarket</span>
+        <img id="logo" src="../JayLogo.png" alt="logo" />
+        <Link to="/">
+          <span id="name">J Cafe</span>
+        </Link>
       </span>
       <div id="menu">
-        <Link to="/">상품리스트</Link>
+        <Link to="/">Menus</Link>
         <Link to="/shoppingcart">
-          장바구니<span id="nav-item-counter">{state.cartItems.length}</span>
+          Cart Items<span id="nav-item-counter">{state.cartItems.length}</span>
         </Link>
       </div>
     </div>
