@@ -8,7 +8,11 @@ function Nav() {
   return (
     <div id="nav-body">
       <span id="title">
-        <img id="logo" src="../JayLogo.png" alt="logo" />
+        <img
+          id="logo"
+          src="https://jcafebucket.s3.ap-northeast-2.amazonaws.com/JayLogo.png"
+          alt="logo"
+        />
         <Link to="/">
           <span id="name">J Cafe</span>
         </Link>
