@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom/cjs/react-router-dom.min";
 
 function Nav() {
   const state = useSelector((state) => state.itemReducer);
@@ -18,10 +19,13 @@ function Nav() {
         </Link>
       </span>
       <div id="menu">
-        <Link to="new-cmarket-redux/">Menus</Link>
-        <Link to="new-cmarket-redux/shoppingcart">
-          Cart Items<span id="nav-item-counter">{state.cartItems.length}</span>
+        {/* <BrowserRouter> */}
+        <Link to="/">Menus</Link>
+        <Link to="/shoppingcart">
+          Cart Items
+          <span id="nav-item-counter">{state.cartItems.length}</span>
         </Link>
+        {/* </BrowserRouter> */}
       </div>
     </div>
   );
