@@ -11,10 +11,10 @@ function App() {
     <Router>
       <Nav />
       <Switch>
-        <Route exact={true} path="/">
+        <Route exact={true} path="new-cmarket-redux/">
           <ItemListContainer />
         </Route>
-        <Route path="/shoppingcart">
+        <Route path="new-cmarket-redux/shoppingcart">
           <ShoppingCart />
         </Route>
       </Switch>

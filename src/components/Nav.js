@@ -18,8 +18,8 @@ function Nav() {
         </Link>
       </span>
       <div id="menu">
-        <Link to="/">Menus</Link>
-        <Link to="/shoppingcart">
+        <Link to="new-cmarket-redux/">Menus</Link>
+        <Link to="new-cmarket-redux/shoppingcart">
           Cart Items<span id="nav-item-counter">{state.cartItems.length}</span>
         </Link>
       </div>
